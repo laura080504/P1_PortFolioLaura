@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Portfolio profesional de Laura Gonzalez Rico, estudiante de ultimo año de Ingeniería Informática.">
+    <title>Portfolio de Laura Gonzalez Rico</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            <span class="material-symbols-outlined estrella-blanca">star</span>
+            Laura Gonzalez Rico
+            <span class="material-symbols-outlined estrella-blanca">star</span>
+        </h1>
+        <img src="Imagenes/Foto_Laura.jpeg" alt="Foto de Laura Gonzalez Rico" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-top: 15px; border: 3px solid ;">
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#Informacion_laura">Información personal</a>
+            <a href="#contacto">Contacto</a>
+            <a href=" https://www.linkedin.com/in/laura-gonzalez-rico-5639133b6/ " target="_blank" rel="noreferrer" class="btn-linkedin">LinkedIn</a>
+            <button id="toggle-tema" class="btn-tema" title="Cambiar tema">
+                <span class="material-symbols-outlined" id="icono-tema">dark_mode</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi-contenido">
+                <p> Estudiante de último año de Ingeniería Informática con una visión integral del ciclo de vida del software. Especializada en el desarrollo con Python, Java, C, C#, HTML, CSS, JavaScript, etc. Cuento con experiencia en el diseño y gestión de bases de datos en PostgreSQL y Oracle, así como capacidad para la toma de requisitos. Profesional organizada y orientada a resultados, con gran adaptabilidad a entornos de trabajo bajo metodologías ágiles y un fuerte compromiso con la calidad en cada entrega </p>
+            </div>
+        </section>
+
+        <aside>
+            <header>
+                <h3>Tecnologias con las que tengo experiencia</h3>
+            </header>
+            <ul>
+                <li><strong>Desarrollo Web y Apps:</strong> React, TypeScript, HTML, CSS, JavaScript, Angular.</li>
+                <li><strong>Lenguajes y Frameworks:</strong> C# (.NET, Entity Framework), Java, Python, C, Haskell.</li>
+                <li><strong>Bases de Datos:</strong> SQL, PostgreSQL, Oracle.</li>
+                <li><strong>Inteligencia Artificial:</strong> ChatGPT, Claude, Gemini, Copilot, Cursor, DeepSeek</li>
+            </ul>
+        </aside>
+
+        <section id="proyectos">
+            <h2>Proyectos en los que he participado</h2>
+            
+            <article>
+                <header>
+                    <h3>Proyecto en la asignatura de Ingeniera del Software</h3>
+                </header>
+                <p>En el grado en la asignatura de Ingeniería del Software, realizamos un proyecto de practicas en el que nos proporcionaron unos casos de uso y en mi caso me encargue de realizar la sección de las compras en una tienda de dispositivos electrónicos. En el proyecto tuvimos que programar en C#. Tuvimos que trabajar con una base de datos en la que se almacenaban las compras y tuvimos que encargarnos de toda la parte del backend. También tuvimos que implementar pruebas unitarias y de integración para comprobar el funcionamiento. El proyecto estuvo dividido en 3 Sprints y en cada grupo existía la figura de un scrum master que lidiaba con los problemas en el grupo y en proyecto. Todo este proyecto esta subido en un repositorio de github.</p>
+                <p>Repositorio del proyecto: <a href="https://github.com/ISII-2526-GrupoB2-Cactus/ISII-2526-GrupoB2-Cactus" target="_blank" rel="noreferrer">https://github.com/ISII-2526-GrupoB2-Cactus/ISII-2526-GrupoB2-Cactus</a></p>
+                <footer>
+                    <small>Tecnologías: C# y Razor</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Proyecto con métodos de búsqueda en grafos y metaheurísticas</h3>
+                </header>
+                <p>En la asignatura de Sistemas inteligentes tuvimos que realizar varios proyectos en los que teníamos que implementar varios métodos de búsqueda en grafos, usar heurísticas, metaheurísticas y modelos de decisión, obteniendo las correspondientes políticas. Estos proyectos se realizaron en Python.</p>
+                <footer>
+                    <small>Tecnologías: Python</small>
+                </footer>
+            </article>
+        </section>
+
+        <section id="Informacion_laura">
+            <h2>Información personal</h2>
+            <details>
+                <summary>¿Cual es mi nombre?</summary>
+                <p>Laura González Rico</p>
+            </details>
+            <details>
+                <summary>¿Donde estudio?</summary>
+                <p>Actualmente estudio en la Universidad de Castilla-La Mancha (UCLM) en el campus de Albacete.</p>
+            </details>
+            <details>
+                <summary>¿Que curso estoy cursando?</summary>
+                <p>Actualmente estoy cursando el 4º curso del Grado en Ingenieria Informatica en la especialización en Ingeniería del Software.</p>
+            </details>
+             <details>
+                <summary>¿Por que he elegido esta especialización?</summary>
+                <p>He elegido esta especialización porque me interesa el desarrollo de software y quiero profundizar en los aspectos técnicos y metodológicos de la ingeniería del software.</p>
+            </details>
+            <details>
+                <summary>¿Como me puedes contactar?</summary>
+                <p>Mediante el correo electrónico Laura.Gonzalez60@alu.uclm.es o rellenando el formulario de contacto.</p>
+            </details>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto" method="post" action="/">
+                <fieldset>
+                    <legend>Hablemos</legend>
+                    
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                    <br><br>
+                    
+                    <label for="em">Email:</label>
+                    <input type="email" id="em" placeholder="tu@email.com" required>
+                    <br><br>
+                    
+                    <label for="motivo">Motivo:</label>
+                    <select name="motivo" id="motivo">
+                        <option value="oportunidad">Oportunidad laboral</option>
+                        <option value="colaboracion">Interes en investigación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+
+                    <label for="mensaje">Detalles de la consulta:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntame más sobre el motivo de tu contacto..."></textarea>
+                    <br><br>
+                    
+                    <button type="submit">Enviar mensaje</button>
+                </fieldset>
+            </form>
+
+            <dialog id="modal-exito">
+                <h3 style="color: var(--color-granate); margin-top: 0;">¡Mensaje enviado!</h3>
+                <p>Gracias por ponerte en contacto conmigo. Te responderé lo antes posible.</p>
+                <button id="cerrar-modal" style="margin-top: 15px;">Aceptar</button>
+            </dialog>
+        </section>
+
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
